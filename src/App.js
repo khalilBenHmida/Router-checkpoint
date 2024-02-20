@@ -2,6 +2,10 @@
 import React, { useState } from 'react';
 import MovieList from './MovieList';
 import Filter from './Filter';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import MovieDetail from "./MovieDetail";
+import Trailer from "./Trailer";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
